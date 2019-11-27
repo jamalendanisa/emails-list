@@ -3,9 +3,9 @@
   "name": "HENNGE Assignment Task",
   "icons": [
     {
-      "src": "hennge.png",
+      "src": "favicon.ico",
       "sizes": "200x200",
-      "type": "image/png"
+      "type": "icon/ico"
     }
   ],
   "start_url": ".",

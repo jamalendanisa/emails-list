@@ -22,13 +22,17 @@ export default class Datepicker extends Component {
       startDate : moment(startDate).format('YYYY/MM/DD'),
       endDate : moment(endDate).format('YYYY/MM/DD')
     }
+    if (filterDate.endDate < filterDate.startDate) {
+      alert("End Date should be later than Start Date!");
+      return false;
+    }
     fetchEmails(filterDate);
   }
 
   returnYears = () => {
     let years = []
     for(let i = moment().year() - 100; i <= moment().year(); i++) {
-      years.push(<option value={i}>{i}</option>);
+      years.push(<option key={i} value={i}>{i}</option>);
     }
     return years;
   }

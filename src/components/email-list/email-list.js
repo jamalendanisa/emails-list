@@ -27,6 +27,10 @@ class EmailList extends Component {
       startDate : startDate,
       endDate : endDate
     }
+    if (filterDate.endDate < filterDate.startDate) {
+      alert("End Date should be later than Start Date!");
+      return false;
+    }
     fetchEmails(filterDate);
   }
 
