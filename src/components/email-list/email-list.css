@@ -1,0 +1,237 @@
+.email-list-component {
+    padding: 30px 70px;
+}
+
+.email-table-component {
+    display: block;
+}
+
+.email-mobile-component {
+    display: none;
+}
+
+.datepicker-component {
+    display: inline-flex;
+    padding-bottom: 15px;
+}
+
+.email-length {
+    padding: 25px 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    border-bottom: 2px solid rgba(224, 224, 224, 1);
+}
+
+.dataempty-img {
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    width: 11%;
+}
+
+.loader {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.email-to-length {
+    background-color: #8a8a8a;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.email-body-cont{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 8px;
+}
+
+.email-body-body{
+    padding: 25px 0;
+}
+
+.button {
+    background-color: #F5F5F5 !important;
+    padding: 13px !important;
+    border: 2px solid rgba(224, 224, 224, 1) !important;
+}
+
+.search {
+    border-radius: 0 7px 7px 0 !important;
+}
+
+.clear {
+    left: 15px;
+    border-radius: 7px !important;
+    padding: 11px !important;
+}
+
+.DateRangePickerInput__withBorder {
+    border-radius: 7px 0 0 7px !important;
+    border: 2px solid rgba(224, 224, 224, 1) !important;
+}
+
+.select-date {
+    font-family: inherit;
+    color: #666;
+    border-radius: 3px;
+    padding: 3px;    
+}
+
+.DateRangePickerInput_arrow {
+    position: relative;
+}
+
+.DateInput {
+    width: 110px !important;
+}
+
+.DateInput_input{
+    font-weight: 600 !important;
+    font-size: 18px !important;
+}
+
+.DateRangePicker_picker{
+    z-index: 10;
+}
+
+.notification-title {
+    font-size: 16px !important;
+    color: #666 !important;
+    padding: 2px 8px !important;
+}
+
+@media only screen and (max-width: 750px) {
+    .datepicker-component{
+        padding: 0 25px;
+    }
+
+    .email-table-component {
+        display: none !important;
+    }
+    
+    .email-mobile-component {
+        display: block !important;
+    }
+
+    .email-list-component {
+        padding: 25px 0 !important;
+    }
+
+    .email-length {
+        padding: 25px 25px 10px;
+    }
+
+    .email-list-header {
+        background-color: #F5F5F5 !important;
+        padding: 10px 25px;
+    }
+
+    .header-border{
+        padding: 0 10px;
+        color: #666;
+    }
+
+    .email-container{
+        border-top: 2px solid rgba(224, 224, 224, 1) !important;
+        padding:15px 25px;
+        cursor: pointer;
+    }
+
+    .email-row{
+        display: inline-flex;
+        position: relative;
+        width: 100%;
+    }
+
+    .icon-mail{
+        width: 13px;
+        padding-right: 10px;
+    }
+
+    .icon-mail-sort{
+        width: 13px;
+        padding: 0 10px;
+    }
+
+    .icon-mail-arrow{
+        width: 4px;
+        padding-left: 10px;
+    }
+
+    .rotate180 {
+        -webkit-transform:rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .email-list-from{
+        font-weight: bold;
+        padding-bottom: 3px;
+    }
+
+    .email-list-to {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 70vw;
+    }
+
+    .email-to-length{
+        padding: 0px 4px;
+        font-weight: 400;
+        right: 0;
+        position: absolute;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .email-list-date{
+        position: absolute;
+        right: 0;
+    }
+
+    .email-list-subject {
+        font-size: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 100vw;
+    }
+
+    .header-name{
+        color: #666;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .selected{
+        color : black;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .DateRangePicker{
+        margin-right: -2px;
+    }
+    .DateInput {
+        width: 17vw !important;
+    }
+    .DateInput_input{
+        padding: 0 !important;
+        text-align: center;
+    }
+    .DateRangePickerInput_calendarIcon{
+        padding: 10px 0px !important;
+    }
+    .DateInput_input{
+        font-size: 3vw !important;
+    }
+}
