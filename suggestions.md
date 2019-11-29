@@ -18,6 +18,8 @@ So here is my thoughts about the things that could be improved from the current 
 
 - If there is a leakage of sensitive information via emails, i think the report action to give warning or to collect the emails contained the leakage should be added too. With this data, we could have a prevention to such event by giving a warning to the sender so they would not do that again or for a prove or reference that could be used in the future.
 
+- Then, the emails list should be sorted to three categories. 1. New emails that just sent (still not given any action). 2. Emails that have been approved or verified. 3. Emails that have been retrieved or reported. So the admin could manage it more easier.
+
 I think that's all of that for now. Once again thank you very much for the opportunity. I really hope i could be a succesful candidate and be a part of your team.
 どうぞよろしくお願いいたします。
 
