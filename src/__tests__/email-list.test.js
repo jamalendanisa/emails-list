@@ -31,7 +31,7 @@ it('should show loader when data is empty', () => {
     <EmailList />
   </Provider>
   ));
-  expect(wrapper.find('.loader').length).toEqual(3);
+  expect(wrapper.find('.loader').length).toEqual(2);
 });
 
 it('should hide loader when data is not empty', () => {
@@ -49,7 +49,7 @@ it('should show dataempty logo when data is empty', () => {
   </Provider>
   ));
 
-  expect(wrapper.find('.dataempty-img').length).toEqual(2);
+  expect(wrapper.find('.dataempty-img').length).toEqual(1);
 });
 
 it('should hide dataempty logo when data is not empty', () => {
