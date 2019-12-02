@@ -7,17 +7,29 @@ import moment from "moment";
 import "../email-list.css";
 
 export default class EmailMobile extends Component {
-  constructor(props) {
-    super(props);
-    this.notificationSystem = React.createRef();
-    this.state = {
-     sort : [{header: 'From', name: 'email_from', sortType: ''},
-             {header: 'To', name: 'email_to', sortType: ''},
-             {header: 'Subject', name: 'subject', sortType: ''},
-             {header: 'Date', name: 'date', sortType: ''}]
-    }
-  } 
+ 
+  notificationSystem = React.createRef();
+  state = {
+    sort : [{header: 'From', name: 'email_from', sortType: ''},
+            {header: 'To', name: 'email_to', sortType: ''},
+            {header: 'Subject', name: 'subject', sortType: ''},
+            {header: 'Date', name: 'date', sortType: ''}],
+    windowWidth: undefined        
+  }
+   
+  componentDidMount() {
+    this.resize();
+    window.addEventListener('resize', this.resize)
+  }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize)
+  }
+  
+  resize = () => this.setState({
+    windowWidth: window.innerWidth
+  });
+  
   openEmail = (data) => {
     const notification = this.notificationSystem.current;
 
@@ -73,12 +85,13 @@ export default class EmailMobile extends Component {
         }
       }
     }
-    setTimeout(forceCheck, 1000);
   }
 
   render = () => {
     const { emails, pending } = this.props;
-     
+
+    if (window.innerWidth <= 750) setTimeout(forceCheck, 1000);
+
     let style = {
       Containers: {
         br: {

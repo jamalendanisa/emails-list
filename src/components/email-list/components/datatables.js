@@ -7,10 +7,8 @@ import NotificationSystem from "react-notification-system";
 import "../email-list.css";
 
 export default class Datatables extends Component {
-  constructor(props) {
-    super(props);
-    this.notificationSystem = React.createRef();
-  }
+
+  notificationSystem = React.createRef();
 
   getMuiTheme = () => createMuiTheme({
     overrides: {

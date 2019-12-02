@@ -7,13 +7,11 @@ import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
 
 export default class Datepicker extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+
+  state = {
       startDate: null,
       endDate: null,
       focusedInput: null,
-    }
   }
 
   filterByDate = (startDate, endDate) => {
