@@ -90,7 +90,7 @@ export default class EmailMobile extends Component {
   render = () => {
     const { emails, pending } = this.props;
 
-    if (window.innerWidth <= 750) setTimeout(forceCheck, 1000);
+    if (this.state.windowWidth <= 750) setTimeout(forceCheck, 1000);
 
     let style = {
       Containers: {
