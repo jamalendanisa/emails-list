@@ -11,7 +11,7 @@ working functionality. Then i create design for when the data still load and whe
 
 It tooks quite some time to find what's best for showing the email's body. I switch the plugin 3 times and finally got what i've been looking for and it meets with the task's requirements too. Change the design a little and after all of it works and looks similar with the design. I move to make the mobile version.
 
-I created the mobile version and I added lazy load but not with serverside processing yet. I just show the outlook just so it looks like the data will load partially when the user scroll the screen. And once it finished, i create a little test for the components using Jest with Enzyme. I'm sorry if it is not fully covered since i want to post this as soon as possible.
+I created the mobile version and I added lazy load but not with serverside processing yet. (Update 2019/12/02: I apologize i need to hold the lazy load for the future update because when the data have been sorted, the list content won't show up until the user scroll the screen.) I just show the outlook just so it looks like the data will load partially when the user scroll the screen. And once it finished, i create a small coverage test for the components using Jest with Enzyme. I'm sorry if it is not fully covered since i want to post this as soon as possible.
 
 Thank you very much for the opportunity. I really hope i could be a succesful candidate and be a part of your team. どうぞよろしくお願いいたします。
 

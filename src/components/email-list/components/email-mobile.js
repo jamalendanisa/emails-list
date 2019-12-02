@@ -1,8 +1,8 @@
 import React,  { Component } from "react";
-import LazyLoad from "react-lazyload";
 import NotificationSystem from "react-notification-system";
-import { LinearProgress } from "@material-ui/core";
 import moment from "moment";
+//import LazyLoad from "react-lazyload";
+//import { LinearProgress } from "@material-ui/core";
 
 import "../email-list.css";
 
@@ -135,8 +135,11 @@ export default class EmailMobile extends Component {
                 let length = emailTo.length - 1;
                 
                 return (
+                  /* Update 2019/12/02: I deeply apologize i need to hold the lazy load for the future update 
+                     because when the data have been sorted, the list content won't show up until the user scroll the screen.
+
                   <LazyLoad key={email.id} offset={100} once={true} height={100} 
-                    placeholder={<div style={{paddingBottom:"100px"}}><LinearProgress /></div>}>
+                    placeholder={<div style={{paddingBottom:"100px"}}><LinearProgress /></div>}> */
                    <div key= {email.id} onClick={() => this.openEmail(email)} className="email-container">
                      <div className="email-row">
                         <img alt="icon-mail" className="icon-mail" src={'files/icon_mail_sp.svg'} />
@@ -155,7 +158,7 @@ export default class EmailMobile extends Component {
                      </div>     
                      <div className="email-list-subject">{email.subject}</div>
                    </div>
-                  </LazyLoad>
+                  /* </LazyLoad> */
           )})}
           </div>
           <NotificationSystem ref={this.notificationSystem} style={style}/>
