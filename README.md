@@ -1,3 +1,10 @@
+
+This project was created for job application purpose. The design was from the company. 
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
